@@ -1,0 +1,19 @@
+<nz-modal [(nzVisible)]="isVisible" (nzOnCancel)="handleClose()">
+  <div *nzModalContent class="modal-content">
+    <h2 class="modal-title">{{ cofee.name }}</h2>
+    <img [src]="cofee.image_url" class="cofee-image" />
+    <div class="modal-details">
+      <p><strong>Description:</strong> {{ cofee.description }}</p>
+      <p><strong>Region:</strong> {{ cofee.region }}</p>
+      <p><strong>Price:</strong> {{ cofee.price }}</p>
+      <p><strong>Flavor Profile:</strong> {{ cofee.flavor_profile }}</p>
+      <p><strong>Grind Options:</strong> {{ cofee.grind_option }}</p>
+      <p><strong>Roast Level:</strong> {{ cofee.roast_level }}</p>
+      <p><strong>Weight:</strong> {{ cofee.weight }}</p>
+    </div>
+  </div>
+
+  <div *nzModalFooter class="modal-footer">
+    <button nz-button nzType="default" (click)="handleClose()">Close</button>
+  </div>
+</nz-modal>

@@ -1,0 +1,91 @@
+<div *ngIf="cofeeForm" class="coffee-form-container">
+  <form [formGroup]="cofeeForm" (ngSubmit)="Save()">
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group nzPrefixIcon="coffee">
+          <input formControlName="name" nz-input placeholder="Coffee Name" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <p *ngIf="cofeeForm.get('name')?.touched && cofeeForm.get('name')?.hasError('invalidSymbols')" class="error-message">
+      Only letters are allowed
+    </p>
+    <p *ngIf="cofeeForm.get('name')?.touched && cofeeForm.get('name')?.hasError('required')" class="error-message">
+      This field is required
+    </p>
+    <p *ngIf="cofeeForm.get('name')?.touched && cofeeForm.get('name')?.hasError('minlength')" class="error-message">
+      Minimum length is 3 characters
+    </p>
+    <p *ngIf="cofeeForm.get('name')?.touched && cofeeForm.get('name')?.hasError('maxlength')" class="error-message">
+      Maximum length is 30 characters
+    </p>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group nzPrefixIcon="info-circle">
+          <input formControlName="description" nz-input placeholder="Description" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <p *ngIf="cofeeForm.get('description')?.touched && cofeeForm.get('description')?.hasError('required')" class="error-message">
+      This field is required
+    </p>
+    <p *ngIf="cofeeForm.get('description')?.touched && cofeeForm.get('description')?.hasError('minlength')" class="error-message">
+      Minimum length is 10 characters
+    </p>
+    <p *ngIf="cofeeForm.get('description')?.touched && cofeeForm.get('description')?.hasError('maxlength')" class="error-message">
+      Maximum length is 100 characters
+    </p>
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group nzPrefixIcon="global">
+          <input formControlName="region" nz-input placeholder="Region" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <p *ngIf="cofeeForm.get('region')?.touched && cofeeForm.get('region')?.hasError('invalidSymbols')" class="error-message">
+      Only letters are allowed
+    </p>
+    <p *ngIf="cofeeForm.get('region')?.touched && cofeeForm.get('region')?.hasError('required')" class="error-message">
+      This field is required
+    </p>
+    <p *ngIf="cofeeForm.get('region')?.touched && cofeeForm.get('region')?.hasError('minlength')" class="error-message">
+      Minimum length is 3 characters
+    </p>
+    <p *ngIf="cofeeForm.get('region')?.touched && cofeeForm.get('region')?.hasError('maxlength')" class="error-message">
+      Maximum length is 30 characters
+    </p>
+
+    <!-- Coffee Price -->
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group nzPrefixIcon="dollar">
+          <input formControlName="price" nz-input placeholder="Price" type="number" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <p *ngIf="cofeeForm.get('price')?.touched && cofeeForm.get('price')?.hasError('required')" class="error-message">
+      This field is required
+    </p>
+    <p *ngIf="cofeeForm.get('price')?.touched && cofeeForm.get('price')?.hasError('min')" class="error-message">
+      Price cannot be negative
+    </p>
+    <p *ngIf="cofeeForm.get('price')?.touched && cofeeForm.get('price')?.hasError('max')" class="error-message">
+      Price cannot be more than 1000
+    </p>
+
+    <!-- Buttons -->
+    <nz-form-item>
+      <nz-form-control>
+        <button nz-button nzType="primary" [disabled]="!cofeeForm.valid">
+          Submit
+        </button>
+        <button nz-button nzType="default" (click)="Close()">
+          Close
+        </button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>

@@ -1,0 +1,76 @@
+.coffee-form-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f0f8ff; /* Culoare de fundal modificată (albăstruie) */
+  border-radius: 12px; /* Borduri mai rotunjite */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Umbra modificată */
+  font-family: 'Roboto', sans-serif; /* Font schimbat */
+
+  nz-form-item {
+    margin-bottom: 20px;
+  }
+
+  nz-input-group {
+    width: 100%;
+  }
+
+  nz-input {
+    width: 100%;
+    padding: 14px; /* Spațiu interior mărit */
+    border-radius: 8px; /* Borduri mai rotunjite */
+    border: 1px solid #666; /* Schimbat culoarea bordurii */
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  nz-input:focus {
+    border-color: #ff6600; /* Culoare nouă la focus (portocaliu) */
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.3); /* Schimbat umbra la focus */
+  }
+
+  .error-message {
+    color: #e60000; /* Culoare de eroare schimbată (roșu intens) */
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  button {
+    margin-right: 15px;
+  }
+
+  button[nzType="primary"] {
+    background-color: #ff6600; /* Culoare buton modificată (portocaliu) */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #cc5200; /* Schimbat culoare hover */
+    }
+
+    &:disabled {
+      background-color: #b3b3b3;
+      cursor: not-allowed;
+    }
+  }
+
+  button[nzType="default"] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}

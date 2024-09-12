@@ -1,0 +1,104 @@
+#auth-page {
+  max-width: 450px;
+  margin: auto;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+
+  h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      &:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+      transform: scale(1.2); /* Slightly larger checkbox */
+    }
+
+    label {
+      font-weight: 400;
+      color: #666;
+    }
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &.success {
+      background-color: #6f4e37; /* Maro închis */
+      color: #fff;
+
+      &:hover {
+        background-color: #5a3c27; /* Maro mai închis la hover */
+        transform: translateY(-2px);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(111, 78, 55, 0.3); /* Umbra personalizată */
+      }
+    }
+
+    &.register {
+      background-color: #6c757d;
+      color: #fff;
+      margin-top: 12px;
+
+      &:hover {
+        background-color: #5a6268;
+        transform: translateY(-2px);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(108, 117, 125, 0.3);
+      }
+    }
+  }
+}

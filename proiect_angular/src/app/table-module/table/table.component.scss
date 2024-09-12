@@ -1,0 +1,139 @@
+
+.nz-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.nz-table thead {
+  background-color: #ff007f;
+  color: #ffffff;
+}
+
+.nz-table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #d6007e;
+  font-weight: bold;
+}
+
+
+
+.nz-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f2c2d1;
+}
+
+.nz-table th, .nz-table td {
+  font-size: 16px;
+}
+
+
+#spinner {
+  text-align: center;
+  background: rgba(255, 182, 193, 0.1);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  width: 100%;
+}
+
+.main-container {
+  padding: 20px 30px;
+  background-color: #d6007e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cofee-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 4px solid #f4a7b9;
+}
+
+
+.nz-button-group .buttons {
+  margin: 10px 0;
+}
+
+.button.success {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button.success:hover {
+  background-color: #e75480;
+  transform: translateY(-2px);
+}
+
+.button.register {
+  background-color: #ff1493;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button.register:hover {
+  background-color: #d62463;
+  transform: translateY(-2px);
+}
+
+.edit-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.cofee-information-container {
+  padding: 20px;
+  background-color: #fce4ec; /* Roz pal */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.delete-cofee, .edit-cofee {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.delete-cofee span {
+  font-size: 24px;
+  color: #ff1493;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.delete-cofee span:hover {
+  transform: scale(1.2);
+  color: #e75480;
+}
+
+
+.edit-cofee span {
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.edit-cofee span:hover {
+  transform: scale(1.2);
+  color: #ff1493;
+}

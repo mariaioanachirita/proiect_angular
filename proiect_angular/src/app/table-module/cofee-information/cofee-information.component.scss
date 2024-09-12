@@ -1,0 +1,60 @@
+
+.modal-content {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.cofee-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.modal-details {
+  text-align: left;
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.modal-details p {
+  margin: 12px 0;
+}
+
+
+.modal-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e1e8ed;
+  border-top: 1px solid #d0d0d0;
+}
+
+.modal-footer button {
+  margin: 0 auto;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal-footer button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
